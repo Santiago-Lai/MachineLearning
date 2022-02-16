@@ -31,8 +31,6 @@ def input():
         if count >= m + dev_size:
             break
         count += 1
-        if f == '.DS_Store':
-            continue
         im = Image.open("train/" + f)
         im = im.resize((num_px, num_px))
         images.append(im)
